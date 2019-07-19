@@ -58,17 +58,18 @@
         </dependency>
         <!--引入mybatis-plus-->
         <!--mybatisplus,加入该jar后，就不再需要mybatis-xxx.jar,mybatis-spring-xxx.jar了，它们会以依赖包的形式被自动维护-->
+
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus</artifactId>
             <version>${mybatisplus.version}</version>
         </dependency>
-        <!--引入mybatisplus orm插件-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatisplus-spring-boot-starter</artifactId>
             <version>1.0.4</version>
         </dependency>
+
         <!--MPGenerator 需要-->
         <dependency>
             <groupId>org.apache.velocity</groupId>

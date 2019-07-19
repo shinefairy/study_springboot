@@ -1,7 +1,7 @@
 package com.wsy.mybatis_plus_demo.mapper;
 
-import com.wsy.mybatis_plus_demo.entity.Student;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.wsy.mybatis_plus_demo.entity.User;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * @author shine
  * @since 2019-07-19
  */
-public interface StudentDao extends BaseMapper<Student> {
+public interface UserDao extends BaseMapper<User> {
 
 }
