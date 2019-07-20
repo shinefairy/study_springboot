@@ -12,10 +12,16 @@ Q4：mybatis-plus 利用MPGenerator生成mapper和mapper.xml service,controller
 
 ###### 2019-07-20
 
-Q1:druid对数据库密码的加密
+Q1:druid对数据库密码的加密 （未完成）
 
 Q2：mybatis-plus 复杂的crud，子查询等操作？
 
-Q3：分析基于shiro的博客系统...
+Q3：分析基于shiro的博客系统...(未完成)
 
+Q4：Springboot整合Swagger2生成在线测试API文档
 
+###### 2019-07-21
+
+Q1：完成分析基于shiro的博客系统
+
+Q2：分析零食商贩小程序数据库设计部分并整理实体类
