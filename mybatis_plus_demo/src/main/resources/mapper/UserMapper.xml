@@ -16,5 +16,13 @@
     <sql id="Base_Column_List">
         id, name, age, email, managerId, createTime
     </sql>
+    <!--查询全部-->
+
+    <select id="selectAll" resultType="user">
+        select * from tb_user ${ew.customSqlsegment}
+    </select>
+    <select id="selectUserPage" resultType="user">
+        select * from tb_user ${ew.customSqlsegment}
+    </select>
 
 </mapper>

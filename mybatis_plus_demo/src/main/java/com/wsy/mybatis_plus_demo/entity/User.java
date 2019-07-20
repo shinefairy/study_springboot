@@ -2,10 +2,7 @@ package com.wsy.mybatis_plus_demo.entity;
 
 import java.util.Date;
 
-import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.annotations.TableName;
-import com.baomidou.mybatisplus.enums.IdType;
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -27,7 +24,10 @@ public class User {
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
+//    @TableField(condition = SqlCondition.LIKE)
     private String name;
+    //表示小于"%s&lt,#{%s}
+//    @TableField(condition = "%s&lt,#{%s}")
     private Integer age;
     private String email;
     private Integer managerId;

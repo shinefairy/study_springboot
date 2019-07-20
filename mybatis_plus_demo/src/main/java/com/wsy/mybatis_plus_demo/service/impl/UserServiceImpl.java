@@ -1,6 +1,6 @@
 package com.wsy.mybatis_plus_demo.service.impl;
 
-import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wsy.mybatis_plus_demo.entity.User;
 import com.wsy.mybatis_plus_demo.mapper.UserDao;
 import com.wsy.mybatis_plus_demo.service.UserService;

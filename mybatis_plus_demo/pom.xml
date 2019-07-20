@@ -56,26 +56,13 @@
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
-        <!--引入mybatis-plus-->
-        <!--mybatisplus,加入该jar后，就不再需要mybatis-xxx.jar,mybatis-spring-xxx.jar了，它们会以依赖包的形式被自动维护-->
 
         <dependency>
             <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus</artifactId>
-            <version>${mybatisplus.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatisplus-spring-boot-starter</artifactId>
-            <version>1.0.4</version>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.1.0</version>
         </dependency>
 
-        <!--MPGenerator 需要-->
-        <dependency>
-            <groupId>org.apache.velocity</groupId>
-            <artifactId>velocity-engine-core</artifactId>
-            <version>${velocity.version}</version>
-        </dependency>
         <!-- 引入mysql-->
         <dependency>
             <groupId>mysql</groupId>
