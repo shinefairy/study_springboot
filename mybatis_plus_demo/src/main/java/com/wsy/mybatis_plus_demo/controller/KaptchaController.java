@@ -2,6 +2,8 @@ package com.wsy.mybatis_plus_demo.controller;
 
 import com.google.code.kaptcha.Constants;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,12 +16,14 @@ import javax.servlet.http.HttpSession;
 import java.awt.image.BufferedImage;
 
 @Slf4j
+@Api(tags = "Kaptcha图片验证码")
 @Controller
 public class KaptchaController {
 
     @Autowired
     private DefaultKaptcha defaultKaptcha;
 
+    @ApiOperation(value = "获取图片验证码")
     @GetMapping("/getKaptchaImage")
     public void getKaptchaImage(HttpServletResponse response, HttpSession session) throws Exception {
 
@@ -41,7 +45,6 @@ public class KaptchaController {
         // create the image with the text
         BufferedImage bi = defaultKaptcha.createImage(capText);
         ServletOutputStream out = response.getOutputStream();
-        System.out.println(session.getAttribute("KAPTCHA_SESSION_KEY"));
         // write the data out
         ImageIO.write(bi, "jpg", out);
         try {

@@ -26,6 +26,7 @@ public class User {
     private Integer id;
 //    @TableField(condition = SqlCondition.LIKE)
     private String name;
+    private String password;
     //表示小于"%s&lt,#{%s}
 //    @TableField(condition = "%s&lt,#{%s}")
     private Integer age;

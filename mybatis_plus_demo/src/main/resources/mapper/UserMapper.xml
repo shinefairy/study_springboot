@@ -5,6 +5,8 @@
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.wsy.mybatis_plus_demo.entity.User">
         <id column="id" property="id" />
+        <id column="password" property="password" />
+
         <result column="name" property="name" />
         <result column="age" property="age" />
         <result column="email" property="email" />
